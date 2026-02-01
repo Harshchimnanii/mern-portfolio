@@ -1,0 +1,140 @@
+.about {
+  padding: 100px 20px;
+}
+
+.section-header {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: clamp(28px, 5vw, 36px);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-number {
+  color: var(--accent);
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}
+
+.about-text strong {
+  color: var(--accent);
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  padding: 20px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.detail-item:hover {
+  border-color: var(--accent);
+  transform: translateX(5px);
+}
+
+.detail-icon {
+  font-size: 24px;
+  color: var(--accent);
+  margin-top: 5px;
+}
+
+.detail-item h3 {
+  color: var(--text-primary);
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.detail-item p {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.hobbies {
+  padding: 20px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.hobbies h3 {
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.hobbies-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.hobby-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: var(--bg-tertiary);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hobby-item:hover {
+  background: var(--bg-primary);
+  color: var(--accent);
+}
+
+.hobby-item svg {
+  font-size: 18px;
+}
+
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hobbies-list {
+    grid-template-columns: 1fr;
+  }
+}
+

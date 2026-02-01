@@ -1,0 +1,9 @@
+
+> harsh-portfolio@1.0.0 build
+> tsc -b && vite build
+
+vite.config.ts(11,11): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Type '{ manualChunks: { vendor: string[]; }; }' is not assignable to type 'OutputOptions | OutputOptions[] | undefined'.
+      Types of property 'manualChunks' are incompatible.
+        Object literal may only specify known properties, and 'vendor' does not exist in type 'ManualChunksFunction'.
